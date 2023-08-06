@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    max-width: 660px;
+    padding: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 2.3128px 39.3176px rgba(0, 0, 0, 0.25);
+    border-radius: 23.128px;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(60px, 1fr));
+    /* grid-gap: 30px; */
+    gap: 30px;
+    font-family: 'Roboto';
+    font-size: 32px;
+    line-height: 38px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+}
+
+.month {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+    color: #000000;
+    text-transform: uppercase;
+    grid-column: span 5;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.day__of-week{
+    font-weight: 700;
+}
+
+.today{
+    background: #FFD200;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    background-color: #FFD200;
+    top: -140%;
+}
